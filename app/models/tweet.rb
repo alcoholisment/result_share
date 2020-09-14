@@ -1,7 +1,7 @@
 class Tweet < ApplicationRecord
   belongs_to :user
   has_many :comments  # commentsテーブルとのアソシエーション
-  validates :text, presence: true
+  validates :text
 
   def self.search(search)
     if search
