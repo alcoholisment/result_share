@@ -367,6 +367,17 @@ embed {
   height: 100%;
 }
 
+.content_image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.contents.row {
+  width: 500px;
+}
+
 .left {
   float: left;
 }
@@ -539,8 +550,8 @@ ul li {
 
 .row:before,
 .row:after {
-  content: " ";
-  display: table;
+  /* content: " "; */
+  /* display: table; */
 }
 
 .row:after {
@@ -675,7 +686,9 @@ a:hover {
 
 .serif,
 div.contents.row div.content_post p {
-  font-family: 'ほのか明朝', serif;
+  /* font-family: 'ほのか明朝', serif; */
+  font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+
 }
 
 .ultra {
@@ -860,18 +873,20 @@ div.contents.row .new_user {
 
 div.contents.row div.content_post {
   margin: 20px 0;
-  padding: 30px;
+  /* padding: 30px; */
   position: relative;
-  height: 400px;
+  width: 500px;
+  height: 375px;
   color: #fff;
   background-size: cover;
   background-position: center center;
   border-radius: 3px;
   box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
+  /* float: left;
+  display: inline-block; */
 }
 
 div.contents.row div.content_post:after {
-  content: '';
   position: absolute;
   top: 0;
   bottom: 0;
@@ -943,8 +958,12 @@ div.contents.row div.content_post p {
   margin: 0;
   font-size: 20px;
   z-index: 2;
-  font-weight: bold;
-  text-shadow: 0 0 2px #000, 0 0 1px #000, 0 0 1px #000;
+  color: #666666;
+  text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+  -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+  0px 1px 0 #FFF,  0 -1px 0 #FFF,
+  -1px 0 0 #FFF, 1px 0 0 #FFF;
+
 }
 
 div.contents.row div.content_post span.name {
@@ -1057,3 +1076,4 @@ footer p {
 .search-form .search-btn {
   width: 10%;
 }
+
