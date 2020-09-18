@@ -2,7 +2,7 @@
 
 <h2 align="center">Result_Share</h2>
 
-## 🌐App URL
+## App URL
 https://result-share.herokuapp.com/
 
 ## テストアカウント
