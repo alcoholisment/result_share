@@ -2,10 +2,6 @@
 
 <h2 align="center">Result_Share</h2>
 
-<p align="center">
-  <a href="Rails公式サイトURL"><img src="https://rubyonrails.org/images/rails-logo.svg" width="80px;" /></a>
-  <a href="Rails公式サイトURL"><img src="https://tech-camp.in/note/wp-content/uploads/Heroku.png" width="80px;" /></a>
-
 ## 🌐App URL
 https://result-share.herokuapp.com/
 
