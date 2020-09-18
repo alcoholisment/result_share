@@ -1,1 +1,1 @@
-![Result_Share](https://gyazo.com/30aaadce79a1619c95aa4363d3fc4053)
+![Result_Share](https://user-images.githubusercontent.com/68902680/93566603-45ea9b80-f9c8-11ea-927c-2f993449ddaf.png)
