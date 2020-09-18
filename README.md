@@ -11,7 +11,7 @@ pw:asdff1
 
 ## 概要
 音ゲーのリザルト画像をシェアできるサイトです。  
-会員登録&ログインをして画像を投稿と、投稿に対してコメントを送ることができます。
+会員登録&ログインをして画像の投稿と、投稿に対してコメントを送ることができます。
 
 ## 制作背景
 音ゲーのリザルト画像をシェアできる専用のサイトがあればいいなと思い、TECH::CAMPで作ったPicTweetというアプリを雛形に作ってみました。
@@ -25,3 +25,44 @@ iPhoneで撮影した画像は4:3になるので、ツイートの枠も4:3に�
 ## 開発環境
 Ruby on Rails  
 Heroku
+
+## DB設計
+
+### users テーブル
+
+| Column | Type | Option |
+| - | - | - |
+| nickname | string | null:false |
+| email | string | null:false default: "" |
+| :encrypted_password | string | null:false default: "" |
+
+### Association
+
+has_many :tweets  
+has_many :comments
+
+### tweets テーブル
+
+| Column | Type |
+| ------ | ---- |
+| name | string | 
+| text | string |
+
+### Association
+
+belongs_to :user  
+has_many :comments  
+has_one_attached :image
+
+### comments テーブル
+
+| Column | Type |
+| ------ | ---- |
+| text | text |
+| user_id | integer |
+| tweet_id | integer |
+
+### Association
+
+  belongs_to :tweet
+  belongs_to :user
