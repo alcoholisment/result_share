@@ -64,5 +64,5 @@ has_one_attached :image
 
 ### Association
 
-  belongs_to :tweet
+  belongs_to :tweet  
   belongs_to :user
