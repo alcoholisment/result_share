@@ -3,6 +3,7 @@ class Tweet < ApplicationRecord
   has_many :comments
   has_one_attached :image
   validates :text, length: { maximum: 100 }
+  validates :image, presence: true
 
   def self.search(search)
     if search
