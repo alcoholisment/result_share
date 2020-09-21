@@ -36,7 +36,7 @@ Heroku
 | email | string | null:false default: "" |
 | :encrypted_password | string | null:false default: "" |
 
-### Association
+#### Association
 
 has_many :tweets  
 has_many :comments
@@ -48,7 +48,7 @@ has_many :comments
 | text | string |
 | user_id | integer |
 
-### Association
+#### Association
 
 belongs_to :user  
 has_many :comments  
@@ -62,7 +62,7 @@ has_one_attached :image
 | user_id | integer |
 | tweet_id | integer |
 
-### Association
+#### Association
 
   belongs_to :tweet  
   belongs_to :user
