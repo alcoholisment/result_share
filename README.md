@@ -45,8 +45,8 @@ has_many :comments
 
 | Column | Type |
 | ------ | ---- |
-| name | string | 
 | text | string |
+| user_id | integer |
 
 ### Association
 
@@ -56,9 +56,9 @@ has_one_attached :image
 
 ### comments テーブル
 
-| Column | Type |
-| ------ | ---- |
-| text | text |
+| Column | Type | Option |
+| ------ | ---- | - |
+| text | text | null:false |
 | user_id | integer |
 | tweet_id | integer |
 
