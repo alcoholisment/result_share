@@ -23,8 +23,8 @@ iPhoneで撮影した画像は4:3になるので、ツイートの枠も4:3に�
 ユーザー間のフォロー機能、いいね機能、レスポンシブデザインなどを取り入れたいと思っています。
 
 ## 開発環境
-Ruby on Rails  
-Heroku
+- <a href="https://rubyonrails.org/">Ruby on Rails</a>
+- <a href="https://jp.heroku.com/">Heroku</a>
 
 ## DB設計
 
